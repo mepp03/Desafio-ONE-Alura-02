@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div style="text-align:center; margin: 20px 0px;">
+      <h1 class="titulo">Jogo da Forca</h1>
+      <input class="text-input esconder" type="text" id="input-chute" placeholder="Escreva uma letra">
+      <button class="btn" id="btn-iniciar">INICIAR JOGO</button>
+      <button class="btn esconder" id="btn-novo">NOVO JOGO</button>
+    </div>
+    <div style="text-align:center">
+      <input class="text-input" type="text" id="input-nova-palavra" placeholder="Escreva uma nova palavra">
+      <button class="btn" id="btn-nova-palavra">ADICIONAR PALAVRA</button>
+    </div>
+    <div id="quadro" style="text-align:center;">
+      <canvas id="forca" height="800px" width="1200px"></canvas>
+    </div>
+
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/forca.js"></script>
+    <script type="text/javascript" src="js/segredo.js"></script>
+  </body>
+</html>
